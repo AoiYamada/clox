@@ -1,0 +1,13 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "build",
+      "type": "shell",
+      "command": "make build/clox",
+      "args": [],
+      "group": "build",
+      "problemMatcher": ["$gcc"]
+    }
+  ]
+}

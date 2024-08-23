@@ -12,14 +12,14 @@ BUILD_DIR = build
 SOURCES = $(wildcard $(SRC_DIR)/*.c)
 HEADERS = $(wildcard $(SRC_DIR)/*.h)
 
+# Run the executable
+all: $(BUILD_DIR)/$(EXECUTABLE)
+	$(BUILD_DIR)/$(EXECUTABLE)
+
 # Compile the C code
 $(BUILD_DIR)/$(EXECUTABLE): $(SOURCES) $(HEADERS)
 	@mkdir -p $(BUILD_DIR)
 	$(CC) -I$(SRC_DIR) -o $@ $(SOURCES)
-
-# Run the executable
-all: $(BUILD_DIR)/$(EXECUTABLE)
-	$(BUILD_DIR)/$(EXECUTABLE)
 
 # Execute the built program
 run:

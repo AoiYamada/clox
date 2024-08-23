@@ -22,7 +22,8 @@
       "preLaunchTask": "build",
       "logging": {
         "engineLogging": true
-      }
+      },
+      "targetArchitecture": "arm64"
     }
   ]
 }

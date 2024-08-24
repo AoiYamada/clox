@@ -20,7 +20,7 @@ all: $(BUILD_DIR)/$(EXECUTABLE)
 $(BUILD_DIR)/$(EXECUTABLE): $(SOURCES) $(HEADERS)
 	@mkdir -p $(BUILD_DIR)
 # `-g` is used to include debugging information in the executable, for use with lldb, remove it for production 
-	$(CC) -I$(SRC_DIR) -o $@ $(SOURCES) -g
+	$(CC) -I $(SRC_DIR) -o $@ $(SOURCES) -g
 
 # Execute the built program
 run:

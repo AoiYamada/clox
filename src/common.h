@@ -1,4 +1,4 @@
-#ifndef clox_common_h
+#ifndef clox_common_h // Prevents double inclusion, https://en.wikipedia.org/wiki/Include_guard
 #define clox_common_h
 
 #include <stdbool.h>

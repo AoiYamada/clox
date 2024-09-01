@@ -109,6 +109,7 @@ bool tableSet(Table *table, ObjString *key, Value value)
 
   entry->key = key;
   entry->value = value;
+
   return isNewKey;
 }
 
